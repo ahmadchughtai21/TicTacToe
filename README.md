@@ -35,5 +35,10 @@ To run this game, you will need:
 This game uses `SetConsoleTextAttribute` for coloring the console output, which is specific to the Windows Console. If you are compiling this game on a different platform, you might need to modify or remove the coloring functionality.
 
 ## Screenshots
+![1](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/e161a62c-9e9a-4595-ba01-200f03d47c41)
+![2](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/f35db380-0048-4309-9295-8e35aa542db9)
+![3](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/6a4f7ee8-e78e-4e12-996b-b0c1990175b5)
+![4](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/385cf350-fac0-4884-80f0-347bdf38998f)
+![5](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/377c3ee5-423a-47e6-a195-d182d6ab73b8)
 
 
