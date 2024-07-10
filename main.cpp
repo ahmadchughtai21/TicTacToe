@@ -439,7 +439,7 @@ void p2_turn_comp()
     while (!validMove)
     {
         SetConsoleTextAttribute(color, 9);
-        cout << "Player 2's turn!" << endl;
+        cout << "Player 2 (Computer)'s turn!" << endl;
         move = rand() % 9 + 1;
         validMove = check_place(move);
         if (!validMove)
@@ -531,7 +531,7 @@ int main()
         cout << "Player vs Computer Mode!" << endl;
         SetConsoleTextAttribute(color, 9);
         cout << "Player 1 is O!" << endl;
-        cout << "Computer is X!" << endl;
+        cout << "Player 2 (Computer) is X!" << endl;
         SetConsoleTextAttribute(color, 15);
         board();
         while (true)
