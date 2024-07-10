@@ -7,9 +7,10 @@ HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
 
 void board();
 bool check_place(int m);
+void play_again();
+int main();
 
 int a = 1, b = 2, c = 3, d = 4, e = 5, f = 6, g = 7, h = 8, i = 9;
-bool first = true;
 
 // winning logics
 void check_win()
@@ -18,91 +19,91 @@ void check_win()
     if (a == 0 && b == 0 && c == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (d == 0 && e == 0 && f == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (g == 0 && h == 0 && i == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (a == 0 && d == 0 && g == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (b == 0 && e == 0 && h == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (c == 0 && f == 0 && i == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (a == 0 && e == 0 && i == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (c == 0 && e == 0 && g == 0)
     {
         cout << "Player 1 wins!" << endl;
-        exit(0);
+        play_again();
     }
 
     // Player 2 wins
     if (a == -1 && b == -1 && c == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (d == -1 && e == -1 && f == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (g == -1 && h == -1 && i == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (a == -1 && d == -1 && g == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (b == -1 && e == -1 && h == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (c == -1 && f == -1 && i == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (a == -1 && e == -1 && i == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
     else if (c == -1 && e == -1 && g == -1)
     {
         cout << "Player 2 wins!" << endl;
-        exit(0);
+        play_again();
     }
 
     // Draw
     if (a != 1 && b != 2 && c != 3 && d != 4 && e != 5 && f != 6 && g != 7 && h != 8 && i != 9)
     {
         cout << "Draw!" << endl;
-        exit(0);
+        play_again();
     }
 }
 
@@ -480,6 +481,29 @@ void p2_turn_comp()
     cout << "Successful!" << endl;
     board();
     check_win();
+}
+
+void play_again()
+{
+    cout << "Do you want to play again?" << endl;
+    cout << "[1] Yes" << endl;
+    cout << "[2] No" << endl;
+    int choice;
+    cout << "Enter Choice: ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+        a = 1, b = 2, c = 3, d = 4, e = 5, f = 6, g = 7, h = 8, i = 9;
+        main();
+        break;
+    case 2:
+        exit(0);
+        break;
+    default:
+        cout << "Invalid Choice!" << endl;
+        play_again();
+    }
 }
 
 int main()
