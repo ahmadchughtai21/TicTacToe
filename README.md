@@ -1,5 +1,4 @@
 # Tic-Tac-Toe Game
-
 This project is a simple implementation of the classic game Tic-Tac-Toe in C++. It is designed to be played in a Windows console environment. The game supports two players taking turns to mark a space in a 3x3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
 ## Features
@@ -7,6 +6,8 @@ This project is a simple implementation of the classic game Tic-Tac-Toe in C++. 
 - Simple and intuitive text-based interface.
 - Colorful console output for enhanced user experience.
 - Checks for valid moves and prevents overwriting of spaces.
+- Added the option to play against the computer.
+- Enhanced colors and X O symbols for better visibility.
 
 ## Prerequisites
 
@@ -33,7 +34,7 @@ To run this game, you will need:
 
 This game uses `SetConsoleTextAttribute` for coloring the console output, which is specific to the Windows Console. If you are compiling this game on a different platform, you might need to modify or remove the coloring functionality.
 
-## Sreenshots
+## Screenshots
 ![Screenshot 2024-07-10 111635](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/3466d8f4-5860-4ff7-b7a3-e754e25d314e)
 ![Screenshot 2024-07-10 112557](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/93883ac6-fb87-44a1-9318-577511401287)
 ![Screenshot 2024-07-10 112339](https://github.com/ahmadchughtai21/TicTacToe/assets/133879449/d922fec1-d78a-4aed-bdff-ca82bd346d09)
