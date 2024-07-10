@@ -57,42 +57,42 @@ void check_win()
     }
 
     // Player 2 wins
-    if (a == 0 && b == 0 && c == 0)
+    if (a == -1 && b == -1 && c == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (d == 0 && e == 0 && f == 0)
+    else if (d == -1 && e == -1 && f == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (g == 0 && h == 0 && i == 0)
-    {
-        cout << "Player  wins!" << endl;
-        exit(0);
-    }
-    else if (a == 0 && d == 0 && g == 0)
+    else if (g == -1 && h == -1 && i == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (b == 0 && e == 0 && h == 0)
+    else if (a == -1 && d == -1 && g == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (c == 0 && f == 0 && i == 0)
+    else if (b == -1 && e == -1 && h == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (a == 0 && e == 0 && i == 0)
+    else if (c == -1 && f == -1 && i == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
     }
-    else if (c == 0 && e == 0 && g == 0)
+    else if (a == -1 && e == -1 && i == -1)
+    {
+        cout << "Player 2 wins!" << endl;
+        exit(0);
+    }
+    else if (c == -1 && e == -1 && g == -1)
     {
         cout << "Player 2 wins!" << endl;
         exit(0);
